@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Accordion</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      padding: 100px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    details {
+      margin: 10px 0;
+      background: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+       list-style: none; /*removes default marker */
+    }
+
+    /* Remove default marker */
+    summary::marker {
+      display: none;
+    }
+
+    /* Custom arrow */
+    summary::before {
+      content: "▶"; 
+      display: inline-block; 
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    /* Rotate arrow when open */
+    details[open] summary::before {
+      transform: rotate(90deg);
+    }
+
+    p {
+      margin: 10px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>FAQ</h1>
+
+  <details>
+    <summary>What is minimalism?</summary>
+    <p>Minimalism is a lifestyle that focuses on simplicity.</p>
+  </details>
+
+  <details>
+    <summary>How can I learn HTML effectively?</summary>
+    <p>Practice by building projects step by step.</p>
+  </details>
+
+  <details>
+    <summary>Is &lt;details&gt; supported in all browsers?</summary>
+    <p>Yes, most modern browsers support it.</p>
+  </details>
+</body>
+</html>

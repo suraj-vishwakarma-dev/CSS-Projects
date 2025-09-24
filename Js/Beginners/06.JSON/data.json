@@ -1,0 +1,11 @@
+{
+    "name": "Suraj",
+    "age": 20,
+    "email": "hi@gmail",
+    "isRun": true,
+    "hobbies": ["reading", "rinning", "hiking", "cooking"],
+    "address": {
+        "city": "Roorke",
+        "isyes": true
+    }
+}
